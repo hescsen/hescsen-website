@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www
+RewriteCond %{HTTP_HOST} ^(.*)\.hescsen\.com
+RewriteRule ^(.*)$ http://hescsen.com/%1/$1 [L,NC,P]
